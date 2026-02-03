@@ -59,6 +59,19 @@
         "runtime": {
           "bin/placeholder/diagnoVet.Domain.dll": {}
         }
+      },
+      "diagnoVet.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "diagnoVet.Application": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/diagnoVet.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/diagnoVet.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -108,12 +121,18 @@
       "type": "project",
       "path": "../diagnoVet.Domain/diagnoVet.Domain.csproj",
       "msbuildProject": "../diagnoVet.Domain/diagnoVet.Domain.csproj"
+    },
+    "diagnoVet.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../diagnoVet.Infrastructure/diagnoVet.Infrastructure.csproj",
+      "msbuildProject": "../diagnoVet.Infrastructure/diagnoVet.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
       "Microsoft.AspNetCore.OpenApi >= 10.0.1",
-      "diagnoVet.Application >= 1.0.0"
+      "diagnoVet.Application >= 1.0.0",
+      "diagnoVet.Infrastructure >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -143,6 +162,9 @@
           "projectReferences": {
             "/Users/paulo/development/diagnoVet/src/diagnoVet.Application/diagnoVet.Application.csproj": {
               "projectPath": "/Users/paulo/development/diagnoVet/src/diagnoVet.Application/diagnoVet.Application.csproj"
+            },
+            "/Users/paulo/development/diagnoVet/src/diagnoVet.Infrastructure/diagnoVet.Infrastructure.csproj": {
+              "projectPath": "/Users/paulo/development/diagnoVet/src/diagnoVet.Infrastructure/diagnoVet.Infrastructure.csproj"
             }
           }
         }

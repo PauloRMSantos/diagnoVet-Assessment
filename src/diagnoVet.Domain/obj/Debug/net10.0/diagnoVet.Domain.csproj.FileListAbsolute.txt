@@ -1,0 +1,12 @@
+/Users/paulo/development/diagnoVet/src/diagnoVet.Domain/bin/Debug/net10.0/diagnoVet.Domain.deps.json
+/Users/paulo/development/diagnoVet/src/diagnoVet.Domain/bin/Debug/net10.0/diagnoVet.Domain.dll
+/Users/paulo/development/diagnoVet/src/diagnoVet.Domain/bin/Debug/net10.0/diagnoVet.Domain.pdb
+/Users/paulo/development/diagnoVet/src/diagnoVet.Domain/obj/Debug/net10.0/diagnoVet.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/paulo/development/diagnoVet/src/diagnoVet.Domain/obj/Debug/net10.0/diagnoVet.Domain.AssemblyInfoInputs.cache
+/Users/paulo/development/diagnoVet/src/diagnoVet.Domain/obj/Debug/net10.0/diagnoVet.Domain.AssemblyInfo.cs
+/Users/paulo/development/diagnoVet/src/diagnoVet.Domain/obj/Debug/net10.0/diagnoVet.Domain.csproj.CoreCompileInputs.cache
+/Users/paulo/development/diagnoVet/src/diagnoVet.Domain/obj/Debug/net10.0/diagnoVet.Domain.sourcelink.json
+/Users/paulo/development/diagnoVet/src/diagnoVet.Domain/obj/Debug/net10.0/diagnoVet.Domain.dll
+/Users/paulo/development/diagnoVet/src/diagnoVet.Domain/obj/Debug/net10.0/refint/diagnoVet.Domain.dll
+/Users/paulo/development/diagnoVet/src/diagnoVet.Domain/obj/Debug/net10.0/diagnoVet.Domain.pdb
+/Users/paulo/development/diagnoVet/src/diagnoVet.Domain/obj/Debug/net10.0/ref/diagnoVet.Domain.dll

@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\diagnoVet.Application\diagnoVet.Application.csproj" />
+    <ProjectReference Include="..\diagnoVet.Infrastructure\diagnoVet.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

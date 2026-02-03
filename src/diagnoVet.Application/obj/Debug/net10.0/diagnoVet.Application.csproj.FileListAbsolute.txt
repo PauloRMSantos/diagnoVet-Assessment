@@ -1,0 +1,16 @@
+/Users/paulo/development/diagnoVet/src/diagnoVet.Application/bin/Debug/net10.0/diagnoVet.Application.deps.json
+/Users/paulo/development/diagnoVet/src/diagnoVet.Application/bin/Debug/net10.0/diagnoVet.Application.dll
+/Users/paulo/development/diagnoVet/src/diagnoVet.Application/bin/Debug/net10.0/diagnoVet.Application.pdb
+/Users/paulo/development/diagnoVet/src/diagnoVet.Application/bin/Debug/net10.0/diagnoVet.Domain.dll
+/Users/paulo/development/diagnoVet/src/diagnoVet.Application/bin/Debug/net10.0/diagnoVet.Domain.pdb
+/Users/paulo/development/diagnoVet/src/diagnoVet.Application/obj/Debug/net10.0/diagnoVet.Application.csproj.AssemblyReference.cache
+/Users/paulo/development/diagnoVet/src/diagnoVet.Application/obj/Debug/net10.0/diagnoVet.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/paulo/development/diagnoVet/src/diagnoVet.Application/obj/Debug/net10.0/diagnoVet.Application.AssemblyInfoInputs.cache
+/Users/paulo/development/diagnoVet/src/diagnoVet.Application/obj/Debug/net10.0/diagnoVet.Application.AssemblyInfo.cs
+/Users/paulo/development/diagnoVet/src/diagnoVet.Application/obj/Debug/net10.0/diagnoVet.Application.csproj.CoreCompileInputs.cache
+/Users/paulo/development/diagnoVet/src/diagnoVet.Application/obj/Debug/net10.0/diagnoVet.Application.sourcelink.json
+/Users/paulo/development/diagnoVet/src/diagnoVet.Application/obj/Debug/net10.0/diagnoVe.CD23CD8D.Up2Date
+/Users/paulo/development/diagnoVet/src/diagnoVet.Application/obj/Debug/net10.0/diagnoVet.Application.dll
+/Users/paulo/development/diagnoVet/src/diagnoVet.Application/obj/Debug/net10.0/refint/diagnoVet.Application.dll
+/Users/paulo/development/diagnoVet/src/diagnoVet.Application/obj/Debug/net10.0/diagnoVet.Application.pdb
+/Users/paulo/development/diagnoVet/src/diagnoVet.Application/obj/Debug/net10.0/ref/diagnoVet.Application.dll

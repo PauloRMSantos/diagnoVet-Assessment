@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("diagnoVet.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e6c2e63d736f416bb382898c09f287cb5fed1e0c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b672470cfb28133b2af4916a2bc4179345dc83b")]
 [assembly: System.Reflection.AssemblyProductAttribute("diagnoVet.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("diagnoVet.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
