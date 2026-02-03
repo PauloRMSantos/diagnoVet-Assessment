@@ -1,8 +1,0 @@
-<Solution>
-  <Folder Name="/src/">
-    <Project Path="src/diagnoVet.Api/diagnoVet.Api.csproj" />
-    <Project Path="src/diagnoVet.Application/diagnoVet.Application.csproj" />
-    <Project Path="src/diagnoVet.Domain/diagnoVet.Domain.csproj" />
-    <Project Path="src/diagnoVet.Infrastructure/diagnoVet.Infrastructure.csproj" />
-  </Folder>
-</Solution>
