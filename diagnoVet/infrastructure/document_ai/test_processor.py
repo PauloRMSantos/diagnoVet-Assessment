@@ -1,11 +1,11 @@
-from application.dtos import ExtractedReportData
+from application.interfaces.document_processor import DocumentProcessor
 
-class TestDocumentProcessor:
-    def process(self, gcs_uri: str):
-        return ExtractedReportData(
-            patient="Paciente Teste",
-            owner="Tutor Teste",
-            veterinarian="Vet Teste",
-            diagnosis="Diagnóstico Teste",
-            recommendations="Recomendações Teste"
-        )
+class TestDocumentProcessor(DocumentProcessor):
+    def extract(self, content: bytes) -> dict:
+        return {
+            "patient": "Ramon",
+            "owner": "João Silva",
+            "veterinarian": "Dra. Ana",
+            "diagnosis": "Normal",
+            "recommendations": "Acompanhamento anual"
+        }

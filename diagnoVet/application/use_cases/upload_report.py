@@ -1,33 +1,33 @@
-import uuid
-
-from domain.Entities import MedicalReport
+from infrastructure.document_ai.document_processor import DocumentAIProcessor
+from infrastructure.document_ai.field_parser import DocumentAIFieldParser
+from infrastructure.document_ai.pdf_image_extractor import PDFImageExtractor
+from infrastructure.storage.gcs_storage import GCSStorage
+from infrastructure.persistence.firestore import ReportRepository
 
 
 class UploadReportUseCase:
+    def __init__(self):
+        self.processor = DocumentAIProcessor()
+        self.parser = DocumentAIFieldParser()
+        self.image_extractor = PDFImageExtractor()
+        self.storage = GCSStorage()
+        self.repo = ReportRepository()
 
-    def __init__(self, storage, processor, repository):
-        self.storage = storage
-        self.processor = processor
-        self.repository = repository
+    def execute(self, pdf_bytes: bytes, filename: str):
+        document = self.processor.process(pdf_bytes)
+        fields = self.parser.parse(document)
 
-    def execute(self, pdf_file):
-        report_id = str(uuid.uuid4())
+        images = self.image_extractor.extract(pdf_bytes)
+        image_urls = [
+            self.storage.upload_image(img["name"], img["bytes"])
+            for img in images
+        ]
 
-        pdf_uri = self.storage.upload_pdf(
-            pdf_file,
-            f"{report_id}.pdf"
-        )
+        report = {
+            "filename": filename,
+            "fields": fields,
+            "images": image_urls
+        }
 
-        data = self.processor.process(pdf_uri)
-
-        report = MedicalReport(
-            report_id,
-            data.patient,
-            data.owner,
-            data.veterinarian,
-            data.diagnosis,
-            data.recommendations
-        )
-
-        self.repository.save(report)
+        report_id = self.repo.save(report)
         return report_id

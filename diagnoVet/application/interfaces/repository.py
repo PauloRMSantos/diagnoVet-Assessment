@@ -1,11 +1,10 @@
 from abc import ABC, abstractmethod
 
-class Repository(ABC):
-
+class ReportRepository(ABC):
     @abstractmethod
-    def save(self, report):
+    def save(self, data: dict, pdf_path: str) -> str:
         pass
 
     @abstractmethod
-    def get_by_id(self, report_id: str):
+    def get(self, report_id: str) -> dict:
         pass

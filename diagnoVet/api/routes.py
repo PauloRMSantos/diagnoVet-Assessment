@@ -1,20 +1,22 @@
-from fastapi import APIRouter, File, UploadFile
-
+from fastapi import APIRouter, UploadFile, File
 from application.use_cases.upload_report import UploadReportUseCase
-from infrastructure.document_ai.test_processor import TestDocumentProcessor
-from infrastructure.persistence.in_memory import InMemoryReportRepository
-from infrastructure.storage.test_storage import TestStorage
+from infrastructure.persistence.firestore import ReportRepository
 
+router = APIRouter(prefix="/api")
 
-router = APIRouter()
+upload_use_case = UploadReportUseCase()
+repo = ReportRepository()
 
-use_case = UploadReportUseCase(
-    storage = TestStorage(),
-    processor = TestDocumentProcessor(),
-    repository = InMemoryReportRepository()
-)
 
 @router.post("/report")
 async def upload_report(file: UploadFile = File(...)):
-    report_id = use_case.execute(file.file)
-    return {"report_id": report_id}
+    report_id = upload_use_case.execute(
+        await file.read(),
+        file.filename
+    )
+    return {"id": report_id}
+
+
+@router.get("/report/{report_id}")
+def get_report(report_id: str):
+    return repo.get(report_id)
