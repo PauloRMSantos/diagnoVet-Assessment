@@ -1,8 +1,8 @@
-from infrastructure.document_ai.document_processor import DocumentAIProcessor
-from infrastructure.document_ai.field_parser import DocumentAIFieldParser
-from infrastructure.document_ai.pdf_image_extractor import PDFImageExtractor
-from infrastructure.storage.gcs_storage import GCSStorage
-from infrastructure.persistence.firestore import ReportRepository
+from diagnoVet.infrastructure.document_ai.document_processor import DocumentAIProcessor
+from diagnoVet.infrastructure.document_ai.field_parser import DocumentAIFieldParser
+from diagnoVet.infrastructure.document_ai.pdf_image_extractor import PDFImageExtractor
+from diagnoVet.infrastructure.storage.gcs_storage import GCSStorage
+from diagnoVet.infrastructure.persistence.firestore import ReportRepository
 
 
 class UploadReportUseCase:

@@ -1,4 +1,4 @@
-from application.interfaces.document_processor import DocumentProcessor
+from diagnoVet.application.interfaces.document_processor import DocumentProcessor
 
 class TestDocumentProcessor(DocumentProcessor):
     def extract(self, content: bytes) -> dict:

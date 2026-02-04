@@ -1,6 +1,6 @@
 from fastapi import APIRouter, UploadFile, File
-from application.use_cases.upload_report import UploadReportUseCase
-from infrastructure.persistence.firestore import ReportRepository
+from diagnoVet.application.use_cases.upload_report import UploadReportUseCase
+from diagnoVet.infrastructure.persistence.firestore import ReportRepository
 
 router = APIRouter(prefix="/api")
 

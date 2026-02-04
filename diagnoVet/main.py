@@ -1,6 +1,6 @@
 import os
 from fastapi import FastAPI
-from api.routes import router
+from diagnoVet.api.routes import router
 
 app = FastAPI(title="diagnoVet API")
 
